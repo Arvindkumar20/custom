@@ -1,0 +1,133 @@
+/* rc/Card.css */ 
+
+
+body{
+  border: 1px solid var(--borderColor);
+
+  background: #000;
+  }
+  .app {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #faf9f9;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 90vw;
+
+  }
+  
+  li {
+    background: #3f3e3e;
+    margin: 10px 0;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    & img{
+      width: 200px;
+      height: 200px;
+border-radius: 6px;
+    }
+    & p{
+      padding: 10px 6px;
+      color: white;
+    }
+  }
+  
+  h2 {
+    margin: 0 0 10px;
+    color: #555;
+  }
+  
+  p {
+    margin: 0;
+    color: #666;
+  }
+  
+/* .app{ */
+  /* max-width: 90vw; */
+  /* margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+} */
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+  padding: 15px;
+ 
+  background: #000;
+  position: relative;
+  border: 5px solid;
+  border-image: linear-gradient(45deg, #e2520a, #f4f09c, #048c0b, #97f09b) 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* .card::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  background: linear-gradient(45deg, #f3ec78, #af4261);
+  border-radius: 10px;
+} */
+h2{
+  text-align: center;
+  color: rgb(98, 98, 242);
+}
+.card-image {
+  width: 250px;
+  height: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.card-description {
+  font-size: 1em;
+  margin-top: 10px;
+  color: #5e91fe;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
